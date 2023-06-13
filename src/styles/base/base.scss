@@ -14,20 +14,20 @@ $breakpoints: (
 
 html {
  
-   font-size: calc(100vw / 1920 * 10);
+   font-size: calc(100vw / 1440 * 10);
    line-height: 1;
-   overflow: hidden;
-  position: fixed;
+  //  overflow: hidden;
+  // position: fixed;
 
 
   @include media('<phone') {
-    font-size: calc(100vw / 750 * 10);
-    background-color: green;
+    // font-size: calc(100vw / 750 * 10);
+    // background-color: green;
   }
 }
 
 body{
-    color : red;
+   
   
 }
 
@@ -45,3 +45,8 @@ button{
   cursor: pointer;
 }
 
+.container{
+  border: 1px solid black;
+  max-width: 144rem;
+  margin: auto;
+}
