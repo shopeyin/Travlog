@@ -12,6 +12,7 @@
         <div class="logo__wrapper">
             <figure class="logo__media">
                 <img src="./logo.svg" class="logo__media-image"/>
+
             </figure>
             <div class="logo__text">
                 <h1>Travlog</h1>
@@ -34,27 +35,60 @@
 
       <section class="header">
           <div class="header__description">
-            <div class="header__description-exploreBox">
-                <h5 class="header__description-text">
-                  Explore the world
-                </h5>
-                <figure class="header__description-media">
-                  <img src="./caseimg.svg" class="header__description-media-image"/>
-                </figure>
-            </div>
-            
-            <h1 class="header__description-title"> Travel <span>top destination</span> of the world</h1>
-            <h4 class="header__description-subtitle">We always make our customer happy by providing as many choices as possible </h4>
+              <div class="header__description-exploreBox">
+                  <h5 class="header__description-text">
+                    Explore the world
+                  </h5>
+                  <figure class="header__description-media">
+                    <img src="./caseimg.svg" class="header__description-media-image"/>
+                  </figure>
+              </div>
+              
+              <h1 class="header__description-title"> Travel <span>top destination</span> of the world</h1>
+              <h4 class="header__description-subtitle">We always make our customer happy by providing as many choices as possible </h4>
 
-            <div class="header__description-startedWatchDemo">
-              <button class="signup">
-                Get started
-              </button>
-              <a href="#"  class="login">Watch Demo</a>
-            </div>
+              <div class="header__description-startedWatchDemo">
+                <button class="signup">
+                  Get started
+                </button>
+                <a href="#"  class="login">Watch Demo</a>
+              </div>
           </div>
-          <div class="header__images">
+          <div class="header__wrapper-images">
+              <div class="header__gallery">
+                <div class="header__gallery-left">
+                  <figure class="header__gallery-one">
+                    <img src='<%= require("./assets/Rectangle 1.png") %>' class="header__gallery-one-image" />
+                   
+                    <div class="header__send">
+                      <img  src='<%= require("./assets/Vector.png") %>' class="header__send-image"/>
+                    </div>
+                  </figure>
+      
+                  <figure class="header__gallery-two">
+                    <img  src='<%= require("./assets/Rectangle 2.png") %>' class="header__gallery-two-image"/>
+                  </figure>
+               
+                </div>
+                <div class="header__gallery-right">
+                  <figure class="header__gallery-three">
+                    <img src='<%= require("./assets/Rectangle 3.png") %>' class="header__gallery-three-image"/>
 
+                    <div class="header__topPlaces">
+                        <figure class="header__topPlaces-imageWrapper">
+                          <img src='<%= require("./assets/location.svg") %>' class="header__topPlaces-imageWrapper-image"/>
+                        </figure> 
+                        <div class="header__topPlaces-text">
+                          <p>Top places</p>
+                        </div>
+                    </div>
+                  </figure>
+                </div>
+                <figure class="header__gallery-bottom">
+  
+                  <img src='<%= require("./assets/adduser.svg") %>' class="header__gallery-bottom-image"/>
+                </figure>
+              </div>
           </div>
       </section>
     </main>

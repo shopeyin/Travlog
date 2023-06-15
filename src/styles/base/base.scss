@@ -13,7 +13,7 @@ $breakpoints: (
 @import '../../../node_modules/include-media/dist/include-media';
 
 html {
- 
+  //@extend %cover;
    font-size: calc(100vw / 1440 * 10);
    line-height: 1;
   //  overflow: hidden;
@@ -27,8 +27,8 @@ html {
 }
 
 body{
-   
-  
+  //@extend %cover;
+  // background-color: red;
 }
 
 
@@ -49,4 +49,6 @@ button{
   border: 1px solid black;
   max-width: 144rem;
   margin: auto;
+  // height: 100%;
+   
 }
