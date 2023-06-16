@@ -7,51 +7,58 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <main class="container">
-      <nav class="navigation">
-        <div class="logo__wrapper">
-            <figure class="logo__media">
-                <img src="./logo.svg" class="logo__media-image"/>
+    <nav class="navigation">
+      <div class="logo__wrapper">
+          <figure class="logo__media">
+              <img src="./logo.svg" class="logo__media-image"/>
 
-            </figure>
-            <div class="logo__text">
-                <h1>Travlog</h1>
-            </div>
-        </div>
-        <ul class="navigation__list">
-           <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Home</a></li>
-           <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Discover</a></li>
-           <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Special Deals</a></li>
-           <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Contact</a></li>
-        </ul>
+          </figure>
+          <div class="logo__text">
+              <h1>Travlog</h1>
+          </div>
+      </div>
+      <ul class="navigation__list">
+         <li class="navigation__list-item"><a href="#"  class="navigation__list-lin">Home</a></li>
+         <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Discover</a></li>
+         <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Special Deals</a></li>
+         <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Contact</a></li>
+      </ul>
 
-        <div class="authentication">
-          <a href="#"  class="login">Log In</a>
-          <button class="signup">
-              Sign Up
-          </button>
-        </div>
-      </nav>
-
-      <section class="header">
+      <div class="authentication">
+        <a href="#"  class="login">Log In</a>
+        <button class="signup">
+            Sign Up
+        </button>
+      </div>
+    </nav>
+    <main>
+       <section class="header">
           <div class="header__description">
-              <div class="header__description-exploreBox">
+              <button class="header__description-exploreBox">
                   <h5 class="header__description-text">
                     Explore the world
                   </h5>
                   <figure class="header__description-media">
                     <img src="./caseimg.svg" class="header__description-media-image"/>
                   </figure>
+                </button>
+              
+              <div class="header__description-textbox">
+                <h1 class="header__description-title"> Travel <span>top destination</span> of the world</h1>
+                <h4 class="header__description-subtitle">We always make our customer happy by providing as many choices as possible </h4>
+
               </div>
               
-              <h1 class="header__description-title"> Travel <span>top destination</span> of the world</h1>
-              <h4 class="header__description-subtitle">We always make our customer happy by providing as many choices as possible </h4>
-
               <div class="header__description-startedWatchDemo">
-                <button class="signup">
-                  Get started
-                </button>
-                <a href="#"  class="login">Watch Demo</a>
+                  <button class="header__description-getstarted">
+                    Get started
+                  </button>
+                  <div class="header__description-playCircleWatchDemo">
+                    <figure class="header__description-playCircle">
+                      <img src='<%= require("./assets/play.svg") %>' class="header__description-playCircle-image"/>
+                    </figure>
+                    <a href="#"  class="header__description-watchdemo">Watch Demo</a>
+                  </div> 
               </div>
           </div>
           <div class="header__wrapper-images">
@@ -85,11 +92,21 @@
                   </figure>
                 </div>
                 <figure class="header__gallery-bottom">
-  
                   <img src='<%= require("./assets/adduser.svg") %>' class="header__gallery-bottom-image"/>
                 </figure>
               </div>
           </div>
+          <figure class="header__arrow">
+            <img src='<%= require("./assets/arrow.svg") %>' class="header__arrow-image"/>
+          </figure>
+      </section>
+      
+      <section class="brands">
+          <div>A</div>
+          <div>A</div>
+          <div>A</div>
+          <div>A</div>
+          <div>A</div>
       </section>
     </main>
   </body>

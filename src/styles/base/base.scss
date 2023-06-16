@@ -5,6 +5,7 @@
 }
 
 $breakpoints: (
+  'smallphone': 600px,
   'phone': 768px,
   'tablet': 1024px,
   'desktop': 1920px,
@@ -14,15 +15,14 @@ $breakpoints: (
 
 html {
   //@extend %cover;
-   font-size: calc(100vw / 1440 * 10);
+   font-size: calc(100vw / 1920 * 10);
    line-height: 1;
   //  overflow: hidden;
   // position: fixed;
 
 
   @include media('<phone') {
-    // font-size: calc(100vw / 750 * 10);
-    // background-color: green;
+     font-size: calc(100vw / 750 * 10); 
   }
 }
 
@@ -44,11 +44,21 @@ button{
   color: inherit;
   cursor: pointer;
 }
-
-.container{
-  border: 1px solid black;
-  max-width: 144rem;
-  margin: auto;
-  // height: 100%;
-   
+main{
+  position: relative;
 }
+// .container{
+//   border: 1px solid green;
+//   margin: auto;
+//   position: relative;
+//   // height: 100%;
+
+//   @include media('<=tablet') {
+//     width: 100%;
+//    }
+   
+//    @include media('<=smallphone') {
+//     background-color: red;
+//    }
+   
+// }
