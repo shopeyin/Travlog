@@ -41,7 +41,7 @@
                   <figure class="header__description-media">
                     <img src="./caseimg.svg" class="header__description-media-image"/>
                   </figure>
-                </button>
+              </button>
               
               <div class="header__description-textbox">
                 <h1 class="header__description-title"> Travel <span>top destination</span> of the world</h1>
@@ -101,13 +101,36 @@
           </figure>
       </section>
       
-      <section class="brands">
-          <div>A</div>
-          <div>A</div>
-          <div>A</div>
-          <div>A</div>
-          <div>A</div>
-      </section>
+      <section class="brands-container">
+        <div class="brands">
+          <div class="brand trip-advisor">
+            <figure class="tripadvisor-fig">
+              <img src='<%= require("./assets/tripadvisor.svg") %>' class="tripadvisor-fig-image"/>
+            </figure>
+          </div>
+          <div class="brand expedia">
+            <figure class="expedia-fig">
+              <img src='<%= require("./assets/expedia.svg") %>' class="expedia-fig-image"/>
+            </figure>
+        </div>
+          <div class="brand booking"> 
+            <figure class="booking-fig">
+              <img src='<%= require("./assets/booking.svg") %>' class="booking-fig-image"/>
+            </figure>
+         </div>
+          <div class="brand airbnb">
+            <figure class="airbnb-fig">
+              <img src='<%= require("./assets/airbnb.svg") %>' class="airbnb-fig-image"/>
+            </figure>
+          </div>
+          <div class="brand orbit">
+            <figure class="orbit-fig">
+              <img src='<%= require("./assets/orbitz.svg") %>' class="orbit-fig-image"/>
+            </figure>
+          </div>
+        </div>
+          
+      </section> 
     </main>
   </body>
 </html>

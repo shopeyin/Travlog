@@ -9,8 +9,16 @@
     gap: 16rem;
 
     @include media('<=tablet') {
-        padding: 1rem 0px;
+        padding: 2.2rem 0px;
       }
+
+    //   @include media('<=phone') {
+    //     // padding: 32px, 0px, 32px, 0px;
+    //     padding-top:31.2rem ;
+    // // padding-right:0 ;
+    // // padding-bottom:3.2rem ;
+    // // padding-left: 0;
+    //   }
 }
 
 .navigation__list-link{

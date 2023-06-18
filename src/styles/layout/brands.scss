@@ -1,0 +1,119 @@
+.brands-container{
+    @extend %section-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+   
+}
+
+.brands{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6.4rem 0px;
+     gap: 1rem;
+    border: 1px solid green;
+    font-size: 3rem;
+    width: 100%;
+
+    
+    @include media('<=tablet') {
+       flex-wrap: wrap;
+       width: 68%;
+     
+    }
+
+    @include media('<=phone') {
+       width: 100%;
+     }
+}
+
+.brand-fig{
+    width: 15rem;
+    height: 7.2rem;
+    position: relative;
+    margin: auto;
+ 
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+       
+    }
+ }
+
+.tripadvisor-fig{
+   width: 15rem;
+   height: 7.2rem;
+   position: relative;
+   margin: auto;
+
+   &-image{
+       @extend %cover;
+       object-fit: cover;
+      
+   }
+}
+.expedia-fig{
+    width: 15rem;
+    height: 7.2rem;
+    position: relative;
+    margin: auto;
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+       
+    }
+ }
+
+.brand{
+    border: 1px solid red;
+    flex-basis: 30%;
+}
+
+.booking-fig{
+    width: 15rem;
+    height: 7.2rem;
+    position: relative;
+    margin: auto;
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+       
+    }
+}
+.airbnb, .orbit{
+    flex-grow: 1;
+    
+}
+
+.airbnb-fig{
+    width: 15rem;
+    height: 7.2rem;
+    position: relative;
+    margin: auto;
+    
+
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+       
+    }
+
+    @include media('<=tablet') {
+        margin-left: auto;
+     }
+}
+
+.orbit-fig{
+    width: 15rem;
+    height: 7.2rem;
+    position: relative;
+    margin: auto;
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+       
+    }
+}
