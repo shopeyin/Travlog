@@ -63,8 +63,6 @@
     font-size: 2rem;
 
     @include media('<=tablet') {
-        // font-size: calc(100vw / 750 * 10);
-        // background-color: green;
         order: 1;
       }
 
@@ -86,19 +84,17 @@
     gap:2rem;
 
     @include media('<=tablet') {
-        
         order:3;
-      }
-
+    }
 }
 
 .login{
     font-size: 1.4rem;
     font-weight: 700;
-    color:#222831;
+    color:$color-ebony-clay;
 }
 .signup{
-    background: #5D50C6;
+    background: $color-indigo;
     border-radius: 10rem;
     padding: 1.6rem 3.2rem;
 }

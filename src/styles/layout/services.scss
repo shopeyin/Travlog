@@ -1,0 +1,130 @@
+.services{
+    @extend %section-width;
+    
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    padding: 6.4rem 0px;
+    //overflow: hidden;
+
+    @include media('<=tablet') {
+        flex-direction: column;
+        justify-content: center;
+        padding: 6.4rem 0px;
+        gap: 6.4rem;
+    }
+    
+}
+
+.services__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    border: 1px solid red;
+    width: 44.4rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    &-title{
+     
+        font-size: 2.3rem;
+        line-height: 2.7rem;
+        color:$color-brilliant-rose;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        border: 1px solid red;
+
+     
+    }
+
+    &-paragraph{
+        font-size: 4.4rem;
+        color:$color-steel-gray;
+        border: 1px solid red;
+        text-align: center;
+
+        @include media('<=tablet') {
+           font-size: 4rem;
+        }
+        @include media('<=phone') {
+            background-color: green;
+            width: 45rem;
+         }
+    }
+
+    @include media('<=tablet') {
+      width:100%;
+      align-items: center;
+    }
+
+    
+}
+
+.services__card{
+    display: flex;
+    align-items: flex-start;
+    gap: 2.1rem;
+    width: 110rem;
+    border: 1px solid green;
+    flex-shrink: 0;
+
+    @include media('<=phone') {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+     }
+}
+
+.services__card-tourGuide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.4rem;
+    gap: 6.4rem;
+
+    width: 35rem;
+    height: 44.3rem;
+    background: $color-white;
+    border: 1px solid rgba(25, 24, 37, 0.1);
+    border-radius: 3.2rem;
+}
+
+.destination-fig{
+    width: 6.4rem;
+    height: 6.4rem;
+    position: relative;
+    margin: auto;
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+       
+    }
+}
+
+.services__card-tourGuide-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+
+    width: 22.2rem;
+    height: 15.3rem;
+}
+.tourGuide-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    text-align: center;
+    color:$color-steel-gray;
+}
+
+.tourGuide-paragraph{
+    border: 1px solid black;
+    width: 19.2rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    text-align: center;
+    color: rgba(25, 24, 37, 0.5);
+}
