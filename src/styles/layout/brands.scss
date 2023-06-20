@@ -3,17 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
 }
 
 .brands{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 1rem;
     align-items: flex-start;
     padding: 3.4rem 0px;
-     gap: 1rem;
-    border: 1px solid green;
+    
     font-size: 3rem;
     width: 100%;
 
@@ -30,7 +28,7 @@
 }
 
 .brand-fig{
-    width: 15rem;
+   width: 20rem;
     height: 7.2rem;
     position: relative;
     margin: auto;
@@ -42,53 +40,22 @@
     }
  }
 
-.tripadvisor-fig{
-   width: 15rem;
-   height: 7.2rem;
-   position: relative;
-   margin: auto;
 
-   &-image{
-       @extend %cover;
-       object-fit: cover;
-      
-   }
-}
-.expedia-fig{
-    width: 15rem;
-    height: 7.2rem;
-    position: relative;
-    margin: auto;
-    &-image{
-        @extend %cover;
-        object-fit: cover;
-       
-    }
- }
+
 
 .brand{
-    border: 1px solid red;
+  
     flex-basis: 32%;
 }
 
-.booking-fig{
-    width: 15rem;
-    height: 7.2rem;
-    position: relative;
-    margin: auto;
-    &-image{
-        @extend %cover;
-        object-fit: cover;
-       
-    }
-}
+
 .airbnb, .orbit{
     flex-grow: 1;
     
 }
 
 .airbnb-fig{
-    width: 15rem;
+    width: 20.5rem;
     height: 7.2rem;
     position: relative;
    
@@ -101,17 +68,18 @@
 
     @include media('<=tablet') {
         margin-left: auto;
-        background-color: red;
+       
      }
 
      @include media('>tablet') {
         margin: auto;
-        background-color: yellow;
+       
+        
      }
 }
 
 .orbit-fig{
-    width: 15rem;
+    width: 20rem;
     height: 7.2rem;
     position: relative;
     &-image{

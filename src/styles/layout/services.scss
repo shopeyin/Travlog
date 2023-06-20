@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1.6rem;
-    border: 1px solid red;
+   
     width: 44.4rem;
     font-weight: 700;
     flex-shrink: 0;
@@ -33,22 +33,20 @@
         color:$color-brilliant-rose;
         letter-spacing: 0.2em;
         text-transform: uppercase;
-        border: 1px solid red;
-
+    
      
     }
 
     &-paragraph{
         font-size: 4.4rem;
         color:$color-steel-gray;
-        border: 1px solid red;
-        text-align: center;
+        
 
         @include media('<=tablet') {
            font-size: 4rem;
         }
         @include media('<=phone') {
-            background-color: green;
+            text-align: center;
             width: 45rem;
          }
     }
@@ -76,7 +74,7 @@
      }
 }
 
-.services__card-tourGuide{
+.services__card-information{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,9 +86,15 @@
     background: $color-white;
     border: 1px solid rgba(25, 24, 37, 0.1);
     border-radius: 3.2rem;
+
+    @include media('<=smallphone') {
+        
+        width: 95%;
+       
+     }
 }
 
-.destination-fig{
+.services__card-information-fig{
     width: 6.4rem;
     height: 6.4rem;
     position: relative;
@@ -102,7 +106,7 @@
     }
 }
 
-.services__card-tourGuide-details{
+.services__card-information-details{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,7 +115,7 @@
     width: 22.2rem;
     height: 15.3rem;
 }
-.tourGuide-title{
+.services__card-information-title{
     font-weight: 700;
     font-size: 2.8rem;
     line-height: 3.4rem;
@@ -119,8 +123,7 @@
     color:$color-steel-gray;
 }
 
-.tourGuide-paragraph{
-    border: 1px solid black;
+.services__card-information-paragraph{
     width: 19.2rem;
     font-weight: 400;
     font-size: 1.8rem;
