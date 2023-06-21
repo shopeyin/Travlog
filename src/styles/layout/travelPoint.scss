@@ -33,8 +33,15 @@
     @include media('<=tablet') {
         width: 100%;
         height: 99.7rem;
+        // background-size: contain;
         
     }
+
+     @include media('<=phone') {
+        background-size: contain;
+        height: 69.7rem;
+        background-position: center center;
+      }
 }
 
 .travelpoint__fig-two{

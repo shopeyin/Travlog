@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     padding: 6.4rem 0px;
-    //overflow: hidden;
+    overflow: hidden;
 
     @include media('<=tablet') {
         flex-direction: column;
