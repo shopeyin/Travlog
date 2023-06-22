@@ -1,0 +1,136 @@
+.footer{
+    @extend %section-width;
+    border:1px solid red;
+    display: flex;
+    align-items: flex-start;
+    padding: 6.4rem 0px;
+    gap: 6.4rem;
+    position: relative;
+
+    @include media('<=tablet') {
+        flex-direction: column;
+    }
+}
+.footer__image{
+    width: 8.2rem;
+    height: 35rem;
+    position: absolute;
+    top: -20.3rem;
+    right: -8.5rem;
+
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+    }
+
+    @include media('<=phone') {
+        display: none;
+     }
+}
+.footer__wrapper-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6.4rem;
+    width: 56rem;
+    border:1px solid blue;
+
+    @include media('<=tablet') {
+        width: 100%;
+    }
+}
+.footer__description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.2rem;
+ 
+}
+
+
+
+.footer__logo{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    max-width:14.2rem;
+
+}
+
+.footer__logo-media{
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    // background: linear-gradient(280.84deg, #5D50C6 7.11%, #F85E9F 5%);
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+    }
+}
+
+.footer__logo-text{
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 4rem;
+
+    color: $color-steel-gray;
+}
+
+.footer__paragraph{
+    font-weight: 450;
+    font-size: 2.3rem;
+    line-height: 3.7rem;
+    color: rgba(25, 24, 37, 0.5);
+}
+
+.footer__socials{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3.2rem;
+    width: 16rem;
+    border:1px solid blue;
+}
+.footer__socials-media{
+    height: 3.2rem;
+    width: 3.2rem;
+    position: relative;
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+    }
+}
+
+.footer__wrapper-address{
+    display: flex;
+    align-items: flex-start;
+    gap: 3.2rem;
+    width: 56rem;
+    border:1px solid green;
+    @include media('<=tablet') {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.footer__company,.footer__contact,.footer__meetus{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 3.2rem;
+    width: 16.5rem;
+
+    & p{
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.9rem;
+        color: $color-steel-gray; 
+    }
+
+    & h6{
+        font-weight: 700;
+        font-size: 2.3rem;
+        line-height: 2.8rem;
+        color: $color-steel-gray;
+    }
+}

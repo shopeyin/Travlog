@@ -1,0 +1,128 @@
+.newsletter{
+    @extend %section-width;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12.8rem 6.4rem;
+    gap: 6.4rem;
+    border: 1px solid red;
+    background: rgba(250, 205, 73, 0.08);
+    border-radius: 3.2rem;
+    position: relative;
+}
+.inverse-triangle{
+    width: 18.4rem;
+    height: 17.6rem;
+    position: absolute;
+    top: -8.3rem;
+    left: -4rem;
+
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+    }
+
+    @include media('<=phone') {
+        display: none;
+     }
+}
+.newsletter__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6.4rem;
+    
+    max-width: 105.6rem;
+    border: 1px solid red;
+}
+
+.newsletter__description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.2rem;
+    height: 19.2rem;
+
+    & h2{
+        font-weight: 700;
+        font-size: 2.3rem;
+        line-height: 2.8rem;
+        border: 1px solid green;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+
+        color: $color-brilliant-rose
+    }
+
+    & p {
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 6.6rem;
+        text-align: center;
+
+        color: $color-steel-gray;
+    }
+}
+
+.newsletter__form{
+    display: flex;
+    align-items: flex-start;
+    gap: 6.4rem;
+    border: 1px solid red;
+   
+    max-width: 105.6rem;
+
+    @include media('<=phone') {
+        flex-direction: column;
+        width: 100%;
+        gap:2rem;
+     }
+
+}
+
+.newsletter__inputField{
+
+ width: 100%;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:  3.2rem;
+    gap: 16rem;
+
+    width: 75.7rem;
+    height: 9.6rem;
+    background: $color-white;
+    border-radius: 3.2rem;
+
+    @include media('<=phone') {
+        width: 100%;
+       
+     }
+}
+.newsletter__subscribeBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3.2rem 6.4rem;
+    gap: 1.6rem;
+
+    width: 23.5rem;
+    height: 9.6rem;
+    background: $color-indigo;
+    border-radius: 3.2rem;
+    font-weight: 700;
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: $color-white;
+
+    @include media('<=phone') {
+        width: 100%;
+        justify-content: center;
+     }
+}

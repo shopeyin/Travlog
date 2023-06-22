@@ -1,0 +1,215 @@
+.testimonials{
+//     background: url(../assets/vec.svg);
+//     background-repeat: no-repeat;
+//     background-size: cover; 
+//     background-origin: content-box;
+//    // background-position: bottom;
+// //     border:1px solid blue;
+//   width: 100%;
+// position: absolute;
+// left: 0;
+
+//     height: 95.8rem;
+    
+//     opacity: 0.1;
+ //transform: rotate(-9.37deg);
+
+ @extend %section-width;
+    // border: 1px solid black;
+    // position: relative;
+     border:1px solid blue;
+    //  width: 100vw;
+    //  margin-left: calc(50% - 50vw);
+    // height: 70rem;
+    // position: absolute;
+    // left: 0;
+    // width: 100%;
+    
+}
+
+.testimonials__backgroundImage{
+     background: url(../assets/vec.svg);
+    // background-repeat: no-repeat;
+    // background-size: cover; 
+    //  border:1px solid blue;
+    // width: 100vw;
+    //  height: 95.8rem;
+    // position: absolute;
+}
+
+.testimonials__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 5.6rem;
+
+
+    @include media('<=phone') {
+        flex-wrap: wrap ;
+        justify-content: space-between;
+        padding: 3.2rem 0px;
+        gap: 6.4rem;
+    }
+}
+.arrow__left-wrapper{
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid rgba(25, 24, 37, 0.1);
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @include media('<=phone') {
+        order: 2;
+    }
+}
+.arrow__left{
+    width: 2.4rem;
+    height: 2.4rem;
+
+    position: relative;
+
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+    }
+}
+.arrow__right-wrapper{
+    width: 10rem;
+    height: 10rem;
+    background: $color-indigo;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media('<=phone') {
+        order: 3;
+    }
+}
+.arrow__right{
+    width: 2.4rem;
+    height: 2.4rem;
+    position: relative;
+
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+    }
+}
+
+.testimonials__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.6rem;
+    width: 87.2rem;
+   
+
+    
+    @include media('<=phone') {
+       flex-basis: 100%;
+    }
+}
+
+.testimonials__description-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+.testimonials__description-header{
+    font-weight: 700;
+    font-size: 2.3rem;
+    line-height:2.8rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: $color-brilliant-rose;
+
+}
+
+.testimonials__description-paragraph{
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 5.3rem;
+    text-align: center;
+    color: $color-steel-gray
+}
+
+.testimonials__description-figure{
+    width: 12.8rem;
+    height: 12.8rem;
+    border: 1px solid red;
+    position: relative;
+    background: url(../assets/testimonial-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.testimonials__description-text p{
+    font-weight: 450;
+    font-size: 2.3rem;
+    line-height: 3.7rem;
+    text-align: center;
+    color: $color-steel-gray;
+}
+.testimonials__description-nameRating{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+
+    & h6{
+        font-weight: 700;
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+        text-align: center;
+
+        /* Orange */
+
+        color: $color-orange;
+
+    }
+}
+
+.testimonials__description-rating{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.6rem;
+    width: 22.4rem;
+    height: 3.2rem;
+}
+
+.testimonials__description-star{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: relative;
+    border: 1px solid red;
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+    }
+}
+
+.testimonials__description-carouselSymbol{
+    display: flex;
+    align-items: flex-start;
+    gap: 2.4rem;
+    width: 12rem;
+    height: 2.4rem;
+}
+
+.ellipse{
+    width: 2.4rem;
+    height: 2.4rem;
+    background: rgba(25, 24, 37, 0.05);
+    border-radius: 10rem;
+
+    &.active{
+        background: $color-brilliant-rose;
+    }
+    
+}
+
