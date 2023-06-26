@@ -6,14 +6,9 @@ import logo from './assets/logo.svg';
 import caseimg from './assets/caseimg.svg'
 import layer from './assets/layer.svg'
 
-// const laughImg = document.getElementById('laughImg')
-// laughImg.src = laughing
 
-// function showLinks(){
-//   const navLink =  document.querySelector('.mobile-nav')
-//   navLink.style.display = 'block'
-//   console.log(navLink)
-// }
+
+
 
 const menu = document.querySelector('.hamburger')
 menu.addEventListener('click', function(){
@@ -24,4 +19,25 @@ menu.addEventListener('click', function(){
     html.classList.toggle('overflow-hidden')
   
 })
-// console.log(menu)
+
+
+const swiper = new Swiper('.swiper', {
+    loop: true,
+  
+    //If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    
+ 
+  });
+
+  console.log(swiper)

@@ -5,33 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webpack App</title>
-  <script defer src="bundle06663f6180d5b2daeed8.js"></script></head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  <script defer src="bundlec75848899d02c90671d8.js"></script></head>
   <body>
     <div class="container">
-      <nav class="navigation">
-        <div class="logo__wrapper">
-            <figure class="logo__media">
-                <img src="./logo.svg" class="logo__media-image"/>
-  
-            </figure>
-            <div class="logo__text">
-                <h1>Travlog</h1>
-            </div>
-        </div>
-        <ul class="navigation__list">
-           <li class="navigation__list-item"><a href="#"  class="navigation__list-lin">Home</a></li>
-           <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Discover</a></li>
-           <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Special Deals</a></li>
-           <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Contact</a></li>
-        </ul>
-  
-        <div class="authentication">
-          <a href="#"  class="login">Log In</a>
-          <button class="signup">
-              Sign Up
-          </button>
-        </div>
+      <div class="nav-container">
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="www.google.com">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Special Deals</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">SignUp</a></li>
+          </ul>
       </nav>
+        <nav class="navigation">
+          <div class="logo__wrapper">
+              <figure class="logo__media">
+                  <img src="./logo.svg" class="logo__media-image"/>
+              </figure>
+              <div class="logo__text">
+                  <h1>Travlog</h1>
+              </div>
+          </div>
+          <ul class="navigation__list">
+             <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Home</a></li>
+             <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Discover</a></li>
+             <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Special Deals</a></li>
+             <li class="navigation__list-item"><a href="#"  class="navigation__list-link">Contact</a></li>
+          </ul>
+  
+          <ul class="authentication">
+            <li class="navigation__list-item login"><a href="#"  class="navigation__list-link login__text">Log In</a></li>
+            <li class="navigation__list-item signup"><a href="#"  class="navigation__list-link signup__text">SignUp</a></li>
+          </ul>
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
+        </nav>
+         
+      </div>      
       <main>
          <section class="header">
             <div class="header__description">
@@ -348,29 +365,23 @@
               </div>
         </section>
         <section class="testimonials">
-                <!-- <div class="testimonials__backgroundImage-wrapper">
-                  <figure class="testimonials__backgroundImage">
-
-                  </figure>
-                </div> -->
-                <div class="testimonials__wrapper">
-                    <div class="arrow__left-wrapper">
-                        <figure class="arrow__left">
-                          <img src='arrow-1.svg' class="arrow__left-image"/>
-                        </figure>
-                    </div>
-                    <div class="testimonials__description">
-                          <div class="testimonials__description-heading">
+          <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                
+                      <div class="swiper-slide">
+                        <div class="swiper__slide-content">
+                            <div class="testimonials__description-heading">
                               <h3 class="testimonials__description-header">Testimonials</h3>
                               <p class="testimonials__description-paragraph">Trust our clients</p>
-                          </div>
-                          <figure class="testimonials__description-figure">
-                             
-                          </figure>
-                          <div class="testimonials__description-text">
-                              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
-                          </div>
-                          <div class="testimonials__description-nameRating">
+                              <figure class="testimonials__description-figure">
+                              
+                              </figure>
+                              <div class="testimonials__description-text">
+                                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                              </div>
+                            </div>
+                            <div class="testimonials__description-nameRating">
                               <h6>Mark Smith / Travel Enthusiast</h6>
                               <div class="testimonials__description-rating">
                                 <figure class="testimonials__description-star">
@@ -389,27 +400,90 @@
                                   <img src='star-2.svg' class="testimonials__description-star-image"/>
                                 </figure>
                               </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper__slide-content">
+                            <div class="testimonials__description-heading">
+                              <h3 class="testimonials__description-header">Testimonials</h3>
+                              <p class="testimonials__description-paragraph">Trust our clients</p>
+                              <figure class="testimonials__description-figure">
+                              
+                              </figure>
+                              <div class="testimonials__description-text">
+                                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                              </div>
+                            </div>
+                            <div class="testimonials__description-nameRating">
+                              <h6>Annie Bolaji / Travel Enthusiast</h6>
+                              <div class="testimonials__description-rating">
+                                <figure class="testimonials__description-star">
+                                  <img src='star-2.svg' class="testimonials__description-star-image"/>
+                                </figure>
+                                <figure class="testimonials__description-star">
+                                  <img src='star-2.svg' class="testimonials__description-star-image"/>
+                                </figure>
+                                <figure class="testimonials__description-star">
+                                  <img src='star-2.svg' class="testimonials__description-star-image"/>
+                                </figure>
+                                <figure class="testimonials__description-star">
+                                  <img src='star-2.svg' class="testimonials__description-star-image"/>
+                                </figure>
+                                <figure class="testimonials__description-star">
+                                  <img src='star-2.svg' class="testimonials__description-star-image"/>
+                                </figure>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__slide-content">
+                        <div class="testimonials__description-heading">
+                          <h3 class="testimonials__description-header">Testimonials</h3>
+                          <p class="testimonials__description-paragraph">Trust our clients</p>
+                          <figure class="testimonials__description-figure">
+                             
+                          </figure>
+                          <div class="testimonials__description-text">
+                              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
                           </div>
-                      
-                          <div class="testimonials__description-carouselSymbol">
-                              <div class="ellipse">
-
-                              </div>
-                              <div class="ellipse active">
-
-                              </div>
-                              <div class="ellipse">
-
-                              </div>
+                        </div>
+                        <div class="testimonials__description-nameRating">
+                          <h6>Shonibare Esther / Travel Enthusiast</h6>
+                          <div class="testimonials__description-rating">
+                            <figure class="testimonials__description-star">
+                              <img src='star-2.svg' class="testimonials__description-star-image"/>
+                            </figure>
+                            <figure class="testimonials__description-star">
+                              <img src='star-2.svg' class="testimonials__description-star-image"/>
+                            </figure>
+                            <figure class="testimonials__description-star">
+                              <img src='star-2.svg' class="testimonials__description-star-image"/>
+                            </figure>
+                            <figure class="testimonials__description-star">
+                              <img src='star-2.svg' class="testimonials__description-star-image"/>
+                            </figure>
+                            <figure class="testimonials__description-star">
+                              <img src='star-2.svg' class="testimonials__description-star-image"/>
+                            </figure>
                           </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="arrow__right-wrapper">
-                      <figure class="arrow__right">
-                        <img src='arrow-2.svg' class="arrow__right-image"/>
-                      </figure>
-                    </div>
+        
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+  
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+          
+
+          </div>
         </section>
+        
         <section class="newsletter">
           <figure class="inverse-triangle">
             <img src='inverse-triangle.svg' class="inverse-triangle-image"/>
@@ -484,5 +558,6 @@
         </footer>
       </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>

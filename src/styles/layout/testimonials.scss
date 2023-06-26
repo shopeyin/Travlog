@@ -1,30 +1,63 @@
 .testimonials{
-//     background: url(../assets/vec.svg);
-//     background-repeat: no-repeat;
-//     background-size: cover; 
-//     background-origin: content-box;
-//    // background-position: bottom;
-// //     border:1px solid blue;
-//   width: 100%;
-// position: absolute;
-// left: 0;
-
-//     height: 95.8rem;
-    
-//     opacity: 0.1;
- //transform: rotate(-9.37deg);
 
  @extend %section-width;
-    // border: 1px solid black;
-    // position: relative;
-     border:1px solid blue;
-    //  width: 100vw;
-    //  margin-left: calc(50% - 50vw);
-    // height: 70rem;
-    // position: absolute;
-    // left: 0;
-    // width: 100%;
+    border:1px solid blue;
+    font-size: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+   
+}
+
+.swiper{
+    display: flex !important;
+    justify-content: center;
+    height: fit-content;
+    height: 64.5rem;
+   
+    @include media('<=phone') {
+        margin: 0 3rem;
+    };
+}
+
+.swiper-wrapper{
+    border:1px solid yellow;
+  
+  
+}
+
+.swiper-slide{
+    position: relative;
+  
+    
+}
+
+.swiper__slide-content{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.6rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 87.2rem;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: $color-indigo;
+
+    @include media('<=phone') {
+        display: none;
+    }
+}
+
+.swiper-pagination{
+    color: $color-indigo;
 }
 
 .testimonials__backgroundImage{
@@ -104,13 +137,15 @@
     align-items: center;
     gap: 5.6rem;
     width: 87.2rem;
-   
+
 
     
     @include media('<=phone') {
        flex-basis: 100%;
     }
 }
+
+
 
 .testimonials__description-heading{
     display: flex;
@@ -140,7 +175,7 @@
 .testimonials__description-figure{
     width: 12.8rem;
     height: 12.8rem;
-    border: 1px solid red;
+   
     position: relative;
     background: url(../assets/testimonial-image.svg);
     background-repeat: no-repeat;
@@ -149,17 +184,19 @@
 }
 .testimonials__description-text p{
     font-weight: 450;
+    max-width: 90rem;
     font-size: 2.3rem;
     line-height: 3.7rem;
     text-align: center;
     color: $color-steel-gray;
+    
 }
 .testimonials__description-nameRating{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3.2rem;
-
+    
     & h6{
         font-weight: 700;
         font-size: 2.8rem;
@@ -186,7 +223,7 @@
     width: 3.2rem;
     height: 3.2rem;
     position: relative;
-    border: 1px solid red;
+   
     &-image{
         @extend %cover;
         object-fit: cover;
