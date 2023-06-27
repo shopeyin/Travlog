@@ -12,8 +12,8 @@
 
     @include media('<=phone') {
         display: flex;
-        width: 95%;
         margin: auto;
+        width: 95%;
     }
 }
 
@@ -106,7 +106,7 @@
 .hamburger{
     position: relative;
     display: block;
-    width: 7rem;
+    width: 5rem;
     cursor:pointer;
    
     appearance: none;
@@ -137,10 +137,10 @@
     height: 0.6rem;
 } 
 .hamburger.is-active::after{
-    transform:rotate(47deg) translate(-0.9rem, -0.8rem)
+    transform:rotate(49deg) translate(-0.9rem, -0.8rem)
 }
 .hamburger.is-active::before{
-    transform:rotate(-47deg) translate(-0.8rem, 0.6rem)
+    transform:rotate(-49deg) translate(-0.8rem, 0.6rem)
 }
 
 .hamburger.is-active .bar{
@@ -176,6 +176,7 @@
         background-color: $color-indigo;
         color: #FFF;
         text-decoration: none; 
+        border-radius: 3rem;
     }
 
     @include media('<=phone') {
@@ -187,41 +188,4 @@
 
 }
 
-.mobile-nav ul{
 
-}
-// .mobile-nav{
-//     // @extend %cover;
-//     font-size: 4rem;
-//     color: blue;
-//     border: 1px solid yellow;
-//     width: 100%;
-//     display: none;
-//     position: fixed;
-//     transition: 0.4s;
-// }
-
-// .show{
-//     display: block;
-// }
-
-// .hamburger .bar, .hamburger::after, .hamburger::before{
-//     content:'' ;
-//     display: block;
-//     width: 6rem;
-//     // height: 0.5rem;
-//     background-color: yellow;
-//     margin: 0.6rem 0rem;
-//     transition: 0.4s;
-//     border:1px solid black;
-//     height: 0.5rem;
-// } 
-// .hamburger.is-active::before{
-//     transform:rotate(-45deg) translate(-0.8rem, 0.6rem)
-// }
-// .hamburger.is-active::after{
-//     transform:rotate(45deg) translate(-0.9rem, -0.8rem)
-// }
-// .hamburger.is-active .bar{
-//     opacity:0 
-// }

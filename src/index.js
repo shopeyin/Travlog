@@ -39,5 +39,11 @@ const swiper = new Swiper('.swiper', {
     
  
   });
-
-  console.log(swiper)
+  var mySwiper = new Swiper ('.swiper-container', {
+    slidesPerView: 2,
+    spaceBetween: 0,
+   
+    watchOverflow: true,
+    centeredSlides: true,
+   
+  })

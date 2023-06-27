@@ -5,7 +5,7 @@
     align-items: flex-start;
     padding: 6.4rem 0px;
     gap: 6.4rem;
-    border: 1px solid black;
+  
 }
 
 .destination__descriptionArrow{
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 1px solid;
+  
     gap: 1.6rem;
     flex-grow: 1;
    
@@ -152,7 +152,7 @@
     align-items: flex-start;
     width: 37.3rem;
     height: 57.5rem;
-    border: 1px solid green;
+  
    
 
     @include media('<=phone') {
@@ -168,7 +168,7 @@
 .destination__fig{
     width: 37.3rem;
     height: 35rem;
-    border: 1px solid red;
+   
     
     
     &.one{
@@ -176,17 +176,29 @@
         background-repeat: no-repeat;
         background-size: cover; 
 
+        @include media('<=phone') {
+            background-size: contain; 
+         }
+
     }
     &.two{
         background: url(../assets/fish.svg);
         background-repeat: no-repeat;
         background-size: cover; 
 
+        @include media('<=phone') {
+            background-size: contain; 
+         }
+
     }
     &.three{
         background: url(../assets/sky.svg);
         background-repeat: no-repeat;
         background-size: cover; 
+
+        @include media('<=phone') {
+            background-size: contain; 
+        }
     }
 
     @include media('<=smallphone') {

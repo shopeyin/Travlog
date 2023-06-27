@@ -5,7 +5,7 @@
     align-items: flex-start;
     padding: 6.4rem 0px;
     gap: 7rem;
-    border: 1px solid red;
+   
 
     @include media('<=tablet') {
         flex-direction: column;
@@ -21,7 +21,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 6.4rem;
-    border: 1px solid black;
+   
 
     @include media('<=tablet') {
       order:2;
@@ -35,7 +35,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 3.2rem;
-    border:1px solid red;
+  
     width: 54.9rem;
 
     @include media('<=tablet') {
@@ -64,7 +64,7 @@
         letter-spacing: 0.2rem;
         text-transform: uppercase;
         color: $color-brilliant-rose;
-        border: 1px solid black;
+        
 
         @include media('<=tablet') {
             width:100%;
@@ -100,7 +100,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 54.9rem;
-    border: 1px solid green;
+  
 
     @include media('<=tablet') {
         width:100%;
@@ -121,6 +121,7 @@
     // height: 16.4rem;
     border: 1px solid rgba(25, 24, 37, 0.1);
     border-radius: 3.2rem;
+    margin-bottom: 1rem;
 
     @include media('<=tablet') {
         width:100%;
@@ -137,7 +138,7 @@
     position: relative;
     
     border-radius: 3.2rem;
-    border: 1px solid red;
+   
    
 
     &-image{
@@ -181,7 +182,7 @@
 }
 
 .feature__backgroundImage-wrapper{
-    border: 1px solid yellow;
+  
 }
 
 .feature__backgroundImage{

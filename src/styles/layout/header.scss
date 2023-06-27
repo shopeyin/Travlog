@@ -6,7 +6,7 @@
     align-items: center;
     padding: 6.4rem 0px;
     position: relative;
-
+    justify-content: center;
     @include media('<=tablet') {
        flex-direction: column;
       }
@@ -191,10 +191,11 @@
     display: flex;
     justify-content: center;
 
+
     @include media('<=tablet') {
         order:1;
         width: 95%;
-       
+       margin: auto;
     }
 }
 

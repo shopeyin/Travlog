@@ -1,12 +1,13 @@
 .services{
-    @extend %section-width;
+    // @extend %section-width;
     
-    border: 1px solid black;
-
+    width: min(144rem, 100%);
+    margin: auto;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     padding: 6.4rem 0px;
-    overflow: hidden;
+   
 
     @include media('<=tablet') {
         flex-direction: column;
@@ -14,16 +15,75 @@
         padding: 6.4rem 0px;
         gap: 6.4rem;
     }
+    @include media('<=tablet') {
+        display: none;
+     }
+}
+
+.services-tab{
+    @extend %section-width;
+    
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 6.4rem 0px;
+    
+    
+
+    @include media('<=tablet') {
+        flex-direction: column;
+        justify-content: center;
+        padding: 6.4rem 0px;
+        gap: 6.4rem;
+    }
+
+    @include media('>tablet') {
+        display: none;
+      }
     
 }
+.swiper-container {
+    width: 90rem;
+    height: 44.3rem;
+     overflow: hidden;
+    position:relative;
+   
+    
+ 
+}
+.swiper-container .swiper-wrapper{
+    gap: 2.1rem;
+    position: absolute;
+    right: 18rem;
+}
+.swiper-container .swiper-wrapper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.4rem !important;
+    gap: 6.4rem !important;
+
+    width: 35rem !important;
+    height: 44.3rem !important;
+    background: $color-white;
+    border: 1px solid rgba(25, 24, 37, 0.1);
+    border-radius: 3.2rem;
+
+    @include media('<=smallphone') {
+        
+        width: 95%;
+       
+     }
+}
+
 
 .services__content{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.6rem;
-   
-    width: 44.4rem;
+    width: 40rem;
     font-weight: 700;
     flex-shrink: 0;
     &-title{
@@ -33,15 +93,16 @@
         color:$color-brilliant-rose;
         letter-spacing: 0.2em;
         text-transform: uppercase;
-    
+        
+       
      
     }
 
     &-paragraph{
         font-size: 4.4rem;
         color:$color-steel-gray;
-        
-
+      
+      
         @include media('<=tablet') {
            font-size: 4rem;
         }
@@ -64,7 +125,7 @@
     align-items: flex-start;
     gap: 2.1rem;
     width: 110rem;
-    border: 1px solid green;
+    
     flex-shrink: 0;
 
     @include media('<=phone') {
@@ -72,6 +133,7 @@
         width: 100%;
         align-items: center;
      }
+
 }
 
 .services__card-information{

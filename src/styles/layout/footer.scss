@@ -1,6 +1,5 @@
 .footer{
     @extend %section-width;
-    border:1px solid red;
     display: flex;
     align-items: flex-start;
     padding: 6.4rem 0px;
@@ -9,6 +8,11 @@
 
     @include media('<=tablet') {
         flex-direction: column;
+    }
+
+    @include media('<=phone') {
+        width: 95%;
+        margin: auto;
     }
 }
 .footer__image{
@@ -33,7 +37,7 @@
     align-items: flex-start;
     gap: 6.4rem;
     width: 56rem;
-    border:1px solid blue;
+    
 
     @include media('<=tablet') {
         width: 100%;
@@ -89,7 +93,7 @@
     align-items: flex-start;
     gap: 3.2rem;
     width: 16rem;
-    border:1px solid blue;
+    
 }
 .footer__socials-media{
     height: 3.2rem;
@@ -106,7 +110,7 @@
     align-items: flex-start;
     gap: 3.2rem;
     width: 56rem;
-    border:1px solid green;
+    
     @include media('<=tablet') {
         width: 100%;
         justify-content: space-between;
