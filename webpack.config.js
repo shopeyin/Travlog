@@ -52,7 +52,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Travlog App',
       filename: 'index.html',
-       template: 'src/template.html',
+      template: 'src/index.html',
     }),
     new BundleAnalyzerPlugin(),
   ],
