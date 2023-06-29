@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: flex-end;
     padding: 6.4rem 0px;
-   
+    
 
     @include media('<=tablet') {
         flex-direction: column;
@@ -22,7 +22,7 @@
 
 .services-tab{
     @extend %section-width;
-    
+  
     margin: auto;
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@
     height: 44.3rem;
      overflow: hidden;
     position:relative;
-   
+  
     
  
 }

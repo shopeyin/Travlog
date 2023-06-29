@@ -53,15 +53,15 @@ button{
 
 
 .container{
-  border: 1px solid black;
+  
   width: min(144rem, 100%);
   margin: auto;
   overflow: hidden;
   position: relative;
-//   background: repeating-linear-gradient(90deg,  rgba(255, 0, 0, 0.10) 0 9rem, white 9rem 12rem );
+  background: repeating-linear-gradient(90deg,  rgba(255, 0, 0, 0.10) 0 9rem, white 9rem 12rem );
 
-//   @include media('>phone' ,'<=tablet') {
-//     background: linear-gradient(10deg, #FFF,  rgba(255, 0, 0, 0.10));  
-//  }
+  @include media('>phone' ,'<=tablet') {
+    background: linear-gradient(10deg, #FFF,  rgba(255, 0, 0, 0.10));  
+ }
 }
 
