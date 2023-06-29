@@ -161,7 +161,8 @@
 
      @include media('<=smallphone') {
         width: 95%; 
-        height: 100.5rem; 
+         height: 85rem; 
+         
      }
 }
 
@@ -176,9 +177,7 @@
         background-repeat: no-repeat;
         background-size: cover; 
 
-        @include media('<=phone') {
-            background-size: contain; 
-         }
+      
 
     }
     &.two{
@@ -186,9 +185,7 @@
         background-repeat: no-repeat;
         background-size: cover; 
 
-        @include media('<=phone') {
-            background-size: contain; 
-         }
+      
 
     }
     &.three{
@@ -196,9 +193,7 @@
         background-repeat: no-repeat;
         background-size: cover; 
 
-        @include media('<=phone') {
-            background-size: contain; 
-        }
+    
     }
 
     @include media('<=smallphone') {
