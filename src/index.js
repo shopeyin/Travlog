@@ -17,6 +17,8 @@ menu.addEventListener('click', function(){
     menu.classList.toggle('is-active')
     navLink.classList.toggle('is-active')
     html.classList.toggle('overflow-hidden')
+
+    console.log('clicked')
   
 })
 
