@@ -5,8 +5,9 @@
     display: flex;
     align-items: center;
     padding: 6.4rem 0px;
-    position: relative;
+     position: relative;
     justify-content: center;
+  
     @include media('<=tablet') {
        flex-direction: column;
       }
@@ -19,8 +20,8 @@
 .header__arrow{
     width: 6.5rem;
     height: 17rem;
-    
     position: absolute;
+  
     bottom: 0;
     left: -10rem;
 

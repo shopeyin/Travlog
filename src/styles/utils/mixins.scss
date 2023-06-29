@@ -7,7 +7,11 @@
   }
 
   %section-width {
-  width: min(118.4rem, 100%);
-   margin: auto;
+    width: min(118.4rem, 100%);
+    margin: auto;
+    background: repeating-linear-gradient(90deg,  rgba(255, 0, 0, 0.10) 0 9rem, white 9rem 12rem );
 
+   @include media('>phone' ,'<=tablet') {
+     background: linear-gradient(10deg, #FFF,  rgba(255, 0, 0, 0.10));  
+  }
  }

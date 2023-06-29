@@ -21,8 +21,9 @@ html {
   // overflow: hidden;
   // position: fixed;
 
+  scroll-behavior: smooth;
 
-  @include media('<phone') {
+  @include media('<=phone') {
      font-size: calc(100vw / 750 * 10); 
   }
 }
@@ -49,21 +50,7 @@ button{
   cursor: pointer;
 }
 
-// .container{
-//   border: 1px solid green;
-//   margin: auto;
-//   position: relative;
-//   // height: 100%;
 
-//   @include media('<=tablet') {
-//     width: 100%;
-//    }
-   
-//    @include media('<=smallphone') {
-//     background-color: red;
-//    }
-   
-// }
 
 .container{
   border: 1px solid black;
@@ -71,6 +58,10 @@ button{
   margin: auto;
   overflow: hidden;
   position: relative;
- 
+//   background: repeating-linear-gradient(90deg,  rgba(255, 0, 0, 0.10) 0 9rem, white 9rem 12rem );
+
+//   @include media('>phone' ,'<=tablet') {
+//     background: linear-gradient(10deg, #FFF,  rgba(255, 0, 0, 0.10));  
+//  }
 }
 
