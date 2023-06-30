@@ -65,8 +65,9 @@
 .authentication{
   
     display: flex;
-    align-items: flex-start;
-
+    align-items: center;
+    width: 22rem;
+    justify-content: space-between;
     @include media('<=phone') {
         display: none;
       }
@@ -74,11 +75,7 @@
 
 .login{
     display: flex;
-    padding: 1.6rem 3.2rem;
-    align-items: flex-start;
-    gap: 0.8rem;
-    border-radius: 10rem;
-    background:$color-white;
+    
 }
 .login__text{
     color: $color-ebony-clay;

@@ -16,7 +16,7 @@ $breakpoints: (
 html {
   //@extend %cover;
   font-size: calc(100vw / 1920 * 10);
-
+  
   line-height: 1;
   // overflow: hidden;
   // position: fixed;
@@ -31,6 +31,7 @@ html {
 body{
   //@extend %cover;
   // background-color: red;
+  font-family: 'Circular Std';
 }
 
 .overflow-hidden{
