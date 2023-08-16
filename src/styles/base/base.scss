@@ -31,7 +31,11 @@ html {
 body{
   //@extend %cover;
   // background-color: red;
-  font-family: 'Circular Std';
+  // font-family: 'Circular Std';
+  background: repeating-linear-gradient(90deg,  rgba(255, 0, 0, 0.10) 0 9rem, white 9rem 12rem );
+  @include media('>phone' ,'<=tablet') {
+    background: linear-gradient(10deg, #FFF,  rgba(255, 0, 0, 0.10));  
+ }
 }
 
 .overflow-hidden{
@@ -59,10 +63,59 @@ button{
   margin: auto;
   overflow: hidden;
   position: relative;
-  background: repeating-linear-gradient(90deg,  rgba(255, 0, 0, 0.10) 0 9rem, white 9rem 12rem );
-
-  @include media('>phone' ,'<=tablet') {
-    background: linear-gradient(10deg, #FFF,  rgba(255, 0, 0, 0.10));  
- }
+ 
 }
 
+.fade-in{
+  opacity:0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in.appear{
+  opacity:1;
+}
+
+.from-left{
+  transform: translateX(-50%);
+  transition: opacity 100ms ease-in, transform 0.4s ease-in; 
+  opacity: 0;
+}
+
+.from-left.appear{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.from-right{
+  transform: translateX(50%);
+  transition: opacity 100ms ease-in, transform 0.4s ease-in; 
+  opacity: 0;
+}
+
+.from-right.appear{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.move-down{
+  transform: translateY(-5rem);
+  transition: transform 200ms ease-in-out;; 
+  opacity: 0;
+}
+
+.move-down.appear{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.zoom{
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s ease-in;
+ 
+}
+
+.zoom.appear{
+  transform: scale(1);
+  opacity: 1;
+}

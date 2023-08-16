@@ -152,11 +152,13 @@
     align-items: flex-start;
     width: 37.3rem;
     height: 57.5rem;
+    // transition: all 1s;
   
    
 
     @include media('<=phone') {
        margin: auto;
+       
      }
 
      @include media('<=smallphone') {

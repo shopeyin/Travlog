@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: flex-end;
     padding: 6.4rem 0px;
-    
+ 
 
     @include media('<=tablet') {
         flex-direction: column;
@@ -85,6 +85,8 @@
     gap: 1.6rem;
     width: 40rem;
     font-weight: 700;
+   
+    
     flex-shrink: 0;
     &-title{
      
@@ -125,6 +127,7 @@
     align-items: flex-start;
     gap: 2.1rem;
     width: 110rem;
+    font-family: 'Circular Std';
     
     flex-shrink: 0;
 
@@ -142,7 +145,7 @@
     align-items: center;
     padding: 6.4rem;
     gap: 6.4rem;
-
+   
     width: 35rem;
     height: 44.3rem;
     background: $color-white;
@@ -154,6 +157,8 @@
         width: 95%;
        
      }
+
+   
 }
 
 .services__card-information-fig{

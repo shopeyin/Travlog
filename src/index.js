@@ -18,7 +18,7 @@ menu.addEventListener('click', function(){
     navLink.classList.toggle('is-active')
     html.classList.toggle('overflow-hidden')
 
-    console.log('clicked')
+    
   
 })
 
@@ -49,3 +49,36 @@ const swiper = new Swiper('.swiper', {
     centeredSlides: true,
    
   })
+
+
+const faders = document.querySelectorAll('.fade-in')
+const sliders = document.querySelectorAll('.slide-in')
+const zoomIn = document.querySelectorAll('.zoom')
+
+const options ={
+  root:null,
+  threshold: 0.2,
+
+}
+const appearOnScroll = new IntersectionObserver((entries)=>{
+
+  entries.forEach(entry=>{
+    if (!entry.isIntersecting){
+      return
+    }else{
+      entry.target.classList.add("appear")
+      appearOnScroll.unobserve(entry.target)
+    }
+  
+  })
+},options)
+
+faders.forEach((el)=>[
+  appearOnScroll.observe(el)
+])
+sliders.forEach((el)=>[
+  appearOnScroll.observe(el)
+])
+zoomIn.forEach((el)=>[
+  appearOnScroll.observe(el)
+])

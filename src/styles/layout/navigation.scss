@@ -1,11 +1,13 @@
 
 .navigation{
     @extend %section-width;
+
     display: flex;
     padding: 3.2rem 0rem;
     justify-content: space-between;
     align-items: center;
     z-index: 5;
+    font-family: 'Circular Std';
 }
 
 .nav-container{
@@ -35,6 +37,7 @@
 }
 
 .logo__text{
+  
     display: flex;
     font-size: 3rem;
     font-weight: 900;
@@ -132,18 +135,19 @@
     margin: 0.6rem 0rem;
     transition: 0.4s;
     height: 0.6rem;
+   
 } 
 .hamburger.is-active::after{
-    transform:rotate(49deg) translate(-0.9rem, -0.8rem)
+    transform:rotate(45deg) translate(-0.9rem, -0.8rem)
 }
 .hamburger.is-active::before{
-    transform:rotate(-49deg) translate(-0.8rem, 0.6rem)
+    transform:rotate(-45deg) translate(-0.8rem, 0.6rem)
 }
 
 .hamburger.is-active .bar{
     opacity:0 
 }
-
+ 
 
 .mobile-nav.is-active{
     left: 0;
